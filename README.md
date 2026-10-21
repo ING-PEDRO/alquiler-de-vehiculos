@@ -139,5 +139,5 @@ Abrir en el navegador: <http://127.0.0.1:8000/admin/>
 
 Los diagramas están en la carpeta [`docs/`](docs/):
 
-- `diagrama_actores.png`: diagrama de casos de uso UML.
-- `diagrama_er.png`: diagrama entidad-relación.
+- `diagrama_er.drawio`: diagrama de casos de uso UML.
+- `diagrama_er.drawio`: diagrama entidad-relación.
