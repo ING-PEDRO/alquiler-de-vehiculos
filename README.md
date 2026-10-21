@@ -32,7 +32,7 @@ Toda la información se gestiona desde el **panel de administración de Django**
 | Jefe de flota | Registrar vehículo, registrar mantenimiento, consultar estado de la flota |
 | Cliente | Consultar vehículos disponibles, consultar historial de alquileres, actualizar sus datos |
 
-![Diagrama de casos de uso](docs/diagrama_actores.png)
+
 
 ## 🗄️ Modelo de datos
 
@@ -56,7 +56,7 @@ El modelo tiene **7 tablas** y sigue la convención `tbl_` + nombre en singular,
 - Vehículo **1:N** Alquiler
 - Alquiler **N:M** Accesorio, resuelta con `tbl_alquiler_accesorio`
 
-![Diagrama entidad-relación](docs/diagrama_er.png)
+
 
 ## 🛠️ Tecnologías
 
