@@ -1,6 +1,6 @@
 
 from django.db import models
-
+from decimal import Decimal
 
 class Alquiler(models.Model):
     class Estado(models.TextChoices):
@@ -30,8 +30,29 @@ class Alquiler(models.Model):
     )
 
     def __str__(self):
+        
         return f"Alquiler {self.id} - {self.cliente}"
 
+    # Los dias se cuentan inclusivo (recoger y devolver el mismo dia = 1 dia)
+    @property
+    def dias(self):
+        return (self.fecha_fin - self.fecha_inicio).days + 1
+
+    @property
+    def total_vehiculo(self):
+        return self.dias * self.vehiculo.categoria.tarifa_diaria
+
+    @property
+    def total_accesorios(self):
+        return sum(
+            (a.cantidad * a.accesorio.precio_dia * self.dias
+             for a in self.accesorios_alquilados.all()),
+            Decimal("0"),
+        )
+
+    @property
+    def total(self):
+        return self.total_vehiculo + self.total_accesorios
     
 class AlquilerAccesorio(models.Model):
     alquiler = models.ForeignKey(

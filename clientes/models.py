@@ -1,4 +1,4 @@
-
+from django.conf import settings
 from django.db import models
 
 
@@ -9,6 +9,12 @@ class Cliente(models.Model):
     apellidos = models.CharField(max_length=100)
     telefono = models.CharField(max_length=20)
     correo = models.EmailField(blank=True)
+
+    usuario = models.OneToOneField(
+        settings.AUTH_USER_MODEL, on_delete=models.SET_NULL,
+        null=True, blank=True, related_name="cliente",
+    )
+    
 
     def __str__(self):
         return f"{self.nombres} {self.apellidos}"
