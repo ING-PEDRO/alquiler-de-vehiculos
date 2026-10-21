@@ -9,9 +9,9 @@ Sistema de información desarrollado en **Django** para una empresa de alquiler 
 
 | Nombre | Usuario de GitHub |
 |---|---|
-| _Nombre completo 1_ | [@ING-PEDRO](https://github.com/ING-PEDRO) |
-| _Nombre completo 2_ | [@mateofonseca08-lab](https://github.com/mateofonseca08-lab) |
-| _Nombre completo 3_ | [@usuario3](https://github.com/usuario3) |
+| _Pedro Villamil_ | [@ING-PEDRO](https://github.com/ING-PEDRO) |
+| _Mateo _ | [@mateofonseca08-lab](https://github.com/mateofonseca08-lab) |
+| _Ender Montero_ | [@usuario3](https://github.com/usuario3) |
 
 ## 🎯 ¿Qué hace el sistema?
 
