@@ -18,6 +18,9 @@ class VehiculoSerializer(serializers.ModelSerializer):
         model = Vehiculo
         fields = "__all__"
 
+    def validate_placa(self, value):
+        return value.strip().upper()
+
     def validate_anio(self, value):
         if value < 1990 or value > 2030:
             raise serializers.ValidationError("El año debe estar entre 1990 y 2030.")
