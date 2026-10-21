@@ -11,7 +11,7 @@ Sistema de información desarrollado en **Django** para una empresa de alquiler 
 |---|---|
 | _Pedro Villamil_ | [@ING-PEDRO](https://github.com/ING-PEDRO) |
 | _Mateo Fonseca_ | [@mateofonseca08-lab](https://github.com/mateofonseca08-lab) |
-| _Ender Montero_ | [@EnderMonter](https://github.com/EnderMonter) |
+| _Ender Montero_ | [@EnderMonter](https://github.com/the-kings-blade-barbershop) |
 
 ## 🎯 ¿Qué hace el sistema?
 
